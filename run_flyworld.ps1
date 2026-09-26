@@ -21,7 +21,7 @@ if (-not $godotPath) {
     $godotPath = $godotCandidates | Where-Object { Test-Path -LiteralPath $_ } | Select-Object -First 1
 }
 if (-not $godotPath -or -not (Test-Path -LiteralPath $godotPath)) {
-    throw "Godot 4.7 was not found. Add godot.exe to PATH or set FLYWORLD_GODOT to its full path."
+    throw "Godot 4.7 is required to run from source. Players should download the Windows release and launch FLYWORLD.exe beside brain_service.exe: https://github.com/welkinhh/FLYWORLD-MaleCNS/releases/latest"
 }
 
 # The ecology runs without Python; Python is only needed for the optional
