@@ -1,0 +1,27 @@
+{
+  "dataset_id": "Winding2023-L1EM",
+  "model_version": "L1EM connectome LIF-lite v1",
+  "source_zip": "Supplementary-Data-S1.zip (external rebuild input)",
+  "source_sha256": "8c1f43809ed5d527ba61b154e377cc21da26383a75eda8aab85ce05607a72a4c",
+  "neuron_count": 444,
+  "matrix_shape": [
+    444,
+    444
+  ],
+  "normalization": "published all-all counts / postsynaptic row sum * 1.45",
+  "dynamics": {
+    "integrator": "v[t+1] = 0.86*v[t] + 0.60*W@spikes[t] + 0.10*input_drive",
+    "threshold": 0.4,
+    "dt_s": 0.02
+  },
+  "groups": {
+    "orn": 42,
+    "pn": 72,
+    "kc": 144,
+    "apl": 2,
+    "ln": 108,
+    "mbon": 48,
+    "dan": 28
+  },
+  "asset": "brain_service/data/larva/l1em_connectome.npz"
+}

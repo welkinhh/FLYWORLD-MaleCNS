@@ -1,0 +1,126 @@
+{
+  "protocol_version": 2,
+  "dataset_id": "MaleCNS-v1.0",
+  "model_version": "MaleCNS v1.0",
+  "requested_model_dt_s": 0.001,
+  "time_domains": [
+    "world_input_time_s",
+    "model_start_s",
+    "model_end_s",
+    "compute_latency_ms"
+  ],
+  "inputs": {
+    "sugar": {
+      "range": [
+        0.0,
+        1.0
+      ],
+      "unit": "normalized concentration",
+      "source": "legacy alias of food_odor"
+    },
+    "food_odor": {
+      "range": [
+        0.0,
+        1.0
+      ],
+      "unit": "normalized odor strength",
+      "source": "distance-weighted edible surface field"
+    },
+    "food_contact_taste": {
+      "range": [
+        0.0,
+        1.0
+      ],
+      "unit": "normalized contact signal",
+      "source": "nearest edible surface contact"
+    },
+    "bitter": {
+      "range": [
+        0.0,
+        1.0
+      ],
+      "unit": "normalized concentration",
+      "source": "Reserved protocol channel; current garden sends 0"
+    },
+    "hunger": {
+      "range": [
+        0.0,
+        1.0
+      ],
+      "unit": "normalized state",
+      "source": "Godot individual state"
+    },
+    "proximity": {
+      "range": [
+        0.0,
+        1.0
+      ],
+      "unit": "normalized distance",
+      "source": "nearest living adult"
+    },
+    "stress": {
+      "range": [
+        0.0,
+        1.0
+      ],
+      "unit": "normalized state",
+      "source": "Godot individual state"
+    },
+    "rival_fear": {
+      "range": [
+        0.0,
+        1.0
+      ],
+      "unit": "normalized memory response",
+      "source": "Godot rival history"
+    },
+    "temperature": {
+      "range": [
+        0.0,
+        1.0
+      ],
+      "unit": "normalized",
+      "conversion": "(temperature_c - 18) / 14"
+    },
+    "humidity": {
+      "range": [
+        0.0,
+        1.0
+      ],
+      "unit": "normalized",
+      "conversion": "(humidity_percent - 30) / 50"
+    },
+    "light": {
+      "range": [
+        0.0,
+        1.0
+      ],
+      "unit": "normalized",
+      "conversion": "light_percent / 100"
+    },
+    "threat_left": {
+      "range": [
+        0.0,
+        1.0
+      ],
+      "unit": "normalized looming pressure",
+      "source": "relative predator position"
+    },
+    "threat_right": {
+      "range": [
+        0.0,
+        1.0
+      ],
+      "unit": "normalized looming pressure",
+      "source": "relative predator position"
+    },
+    "threat_approach": {
+      "range": [
+        0.0,
+        1.0
+      ],
+      "unit": "normalized approach pressure",
+      "source": "relative predator distance and motion"
+    }
+  }
+}

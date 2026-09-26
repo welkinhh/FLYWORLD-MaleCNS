@@ -1,0 +1,4 @@
+# Optional asset rebuilding and Windows packaging dependencies.
+-r ../requirements.txt
+pandas>=2.2,<4
+pyinstaller>=6,<7

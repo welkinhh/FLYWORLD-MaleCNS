@@ -1,0 +1,77 @@
+{
+  "generated_at": "2026-09-18",
+  "project_root": "repository root",
+  "sources": [
+    {
+      "name": "flybrain",
+      "role": "adult MaleCNS sparse simulator",
+      "url": "https://github.com/alextitonis/fly.ai",
+      "revision": "1fd161aaa4a525c61e63647f6db892eb3535aa89",
+      "code_license": "MIT",
+      "data_license": "CC BY 4.0",
+      "vendored_path": "third_party/flybrain",
+      "data": {
+        "brain.npz": "cc9bd1ecd00bd703a6fa648bc6ad145c93c7c1ee53debdcc9ce0d1f4305e6aca",
+        "weights.npz": "c29919aa44069a271b1ee978abe05fa9bf6e45e4ba3e436e92b624ef1b5be40c"
+      },
+      "runtime_path": "data/malecns (downloaded, not committed)"
+    },
+    {
+      "name": "Winding 2023 L1EM",
+      "role": "larval L1 morphology reference",
+      "url": "https://l1em.catmaid.virtualflybrain.org/",
+      "paper": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7614541/",
+      "license_or_access": "public CATMAID SWC endpoint",
+      "skeleton_ids": ["29", "11995", "23233"],
+      "asset": "assets/morphology/larva.json",
+      "asset_sha256": "3f7fecca8cde8453bbe92b7f0c3fca59a9ea34917f5b0246e9df79dab183c652",
+      "connectome_asset": "brain_service/data/larva/l1em_connectome.npz",
+      "connectome_asset_sha256": "ea09b284c269f7c540d31d3097d9276cee4d97434fc9bed299a1675cdb96bd0d",
+      "connectome_model": "L1EM connectome LIF-lite v1"
+    },
+    {
+      "name": "MaleCNS morphology slice",
+      "role": "adult tubular brain display",
+      "asset": "assets/morphology/adult.json",
+      "asset_sha256": "d03d8b1909dc45aa47f08aeaf30f4e824e11ced65029fe938f9712ba6661fc11",
+      "source_manifest": "assets/morphology/manifest.json"
+    },
+    {
+      "name": "MaleCNS neuron centers",
+      "role": "source-ID positions for adult activity overlays",
+      "asset": "assets/morphology/adult_full_brain.bin",
+      "asset_sha256": "e352e6c86e5e3d76b5bda859a086c97d6945f4ee95c128d70202b10712208d0a",
+      "valid_neuron_centers": 140638,
+      "expected_neurons": 166700,
+      "complete": false
+    },
+    {
+      "name": "MaleCNS connectome edge LOD",
+      "role": "real strong-connection edge render for adult brain view",
+      "asset": "assets/morphology/adult_connectome_edges.bin",
+      "asset_sha256": "64cbb706eca833f35fe26fe3928a02c8896e42b4ba3f555a83c105e6d34b109b",
+      "source_data": "MaleCNS weights.npz (downloaded, not committed)",
+      "selection": "strongest absolute-weight 4 entries per source neuron",
+      "complete_synapse_render": false
+    },
+    {
+      "name": "MaleCNS runtime branch LOD",
+      "role": "deterministic every-14th-skeleton render stream derived from the complete branch asset",
+      "asset": "assets/morphology/adult_runtime_branches.bin",
+      "source_asset": "optional adult_full_branches.bin build output",
+      "asset_sha256": "056c4e8fc4daeaa464a7798c826d03288d5bde750b3f61aac4906e18fa1c6e7c",
+      "runtime_skeletons": 11908,
+      "runtime_display_nodes": 563722,
+      "complete_source_preserved": false
+    },
+    {
+      "name": "L1EM branch LOD",
+      "role": "topology-preserving branch stream for all public larval L1EM skeletons",
+      "asset": "assets/morphology/larva_full_branches.bin",
+      "asset_sha256": "92fdde86e0c6fa0cf965607bb3900eeb9e02655fb34b8b8e7229b931e831ef39",
+      "downloaded_skeletons": 444,
+      "expected_skeletons": 444,
+      "complete": true
+    }
+  ]
+}

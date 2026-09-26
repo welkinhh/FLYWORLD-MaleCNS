@@ -1,0 +1,32 @@
+# Godot/editor generated state
+.godot/
+*.import
+
+# Local Python environments and caches
+.venv/
+.packaging_venv/
+packaging_build/
+dist/
+*.spec
+**/__pycache__/
+*.py[cod]
+
+# Generated exports, screenshots and regression reports
+build/*
+!build/.gitkeep
+
+# Optional large research downloads (fetch with flybrain or the research scripts)
+data/*
+!data/README.md
+assets/morphology/adult_full_branches.bin
+*.zip
+*.exe
+*.pck
+
+# Local editor and OS noise
+.idea/
+.vscode/
+*.tmp
+*.log
+Thumbs.db
+.DS_Store

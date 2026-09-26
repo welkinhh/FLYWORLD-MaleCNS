@@ -1,0 +1,199 @@
+{
+  "asset_version": 2,
+  "protocol": "FLYWORLD observation v2",
+  "coverage_report": "build/morphology_coverage_report.json",
+  "completeness": "partial_by_design; the report is authoritative for expected, loaded and missing skeletons",
+  "adult_center_asset": {
+    "path": "adult_full_brain.bin",
+    "source": "data/malecns/brain.npz positions",
+    "valid_neuron_centers": 140638,
+    "expected_neurons": 166700,
+    "complete": false
+  },
+  "adult_connectome_edge_lod": {
+    "path": "adult_connectome_edges.bin",
+    "source": "data/malecns/weights.npz",
+    "edges": 562407,
+    "selection": "strongest absolute-weight 4 entries per source",
+    "complete_synapse_render": false
+  },
+  "adult_runtime_branch_lod": {
+    "path": "adult_runtime_branches.bin",
+    "source_asset": "optional build output from adult_full_branches.bin",
+    "sha256": "056c4e8fc4daeaa464a7798c826d03288d5bde750b3f61aac4906e18fa1c6e7c",
+    "source_skeletons": 166700,
+    "runtime_skeletons": 11908,
+    "runtime_display_nodes": 563722,
+    "selection": "deterministic every-14th skeleton; full stream is an optional rebuild output",
+    "complete_source_preserved": false
+  },
+  "larva_branch_lod": {
+    "path": "larva_full_branches.bin",
+    "source": "optional data/morphology_raw/larva_full/*.swc",
+    "downloaded_skeletons": 444,
+    "expected_skeletons": 444,
+    "display_nodes": 21312,
+    "complete": true
+  },
+  "adult": [
+    {
+      "neuron_id": "10001",
+      "label": "DNp01_L",
+      "stage": "adult_malecns",
+      "dataset": "MaleCNS v1.0",
+      "source_url": "https://storage.googleapis.com/flyem-male-cns/v1.0/segmentation/skeletons-malecns/skeletons-swc/10001.swc",
+      "sha256": "838c60b0e4724d8ca163be994012ebdc23e7ccbdcb9cde92f25e541bc4696511",
+      "raw_node_count": 2975,
+      "display_node_count": 420,
+      "downsampling": "retain roots, branch/terminal nodes and depth stride; restore parent chains",
+      "coordinate_units": "8nm"
+    },
+    {
+      "neuron_id": "10010",
+      "label": "DNp01_R",
+      "stage": "adult_malecns",
+      "dataset": "MaleCNS v1.0",
+      "source_url": "https://storage.googleapis.com/flyem-male-cns/v1.0/segmentation/skeletons-malecns/skeletons-swc/10010.swc",
+      "sha256": "97e1c587397bd6ec1d6489c1ff129c13b3794745f1ada4376313fdf50363d336",
+      "raw_node_count": 3312,
+      "display_node_count": 420,
+      "downsampling": "retain roots, branch/terminal nodes and depth stride; restore parent chains",
+      "coordinate_units": "8nm"
+    },
+    {
+      "neuron_id": "10045",
+      "label": "DNg100_L",
+      "stage": "adult_malecns",
+      "dataset": "MaleCNS v1.0",
+      "source_url": "https://storage.googleapis.com/flyem-male-cns/v1.0/segmentation/skeletons-malecns/skeletons-swc/10045.swc",
+      "sha256": "0d2f5eaa69ca35af1100ea2a88b4383b9b2887faa06b93f9398e810c3ca0bd66",
+      "raw_node_count": 23904,
+      "display_node_count": 420,
+      "downsampling": "retain roots, branch/terminal nodes and depth stride; restore parent chains",
+      "coordinate_units": "8nm"
+    },
+    {
+      "neuron_id": "10056",
+      "label": "DNg100_R",
+      "stage": "adult_malecns",
+      "dataset": "MaleCNS v1.0",
+      "source_url": "https://storage.googleapis.com/flyem-male-cns/v1.0/segmentation/skeletons-malecns/skeletons-swc/10056.swc",
+      "sha256": "ddff463d5ddaab83ae3a6b98bd72a662a3072c8d86b33d468b0d71c0d54db376",
+      "raw_node_count": 24387,
+      "display_node_count": 420,
+      "downsampling": "retain roots, branch/terminal nodes and depth stride; restore parent chains",
+      "coordinate_units": "8nm"
+    },
+    {
+      "neuron_id": "10360",
+      "label": "DNa02_L",
+      "stage": "adult_malecns",
+      "dataset": "MaleCNS v1.0",
+      "source_url": "https://storage.googleapis.com/flyem-male-cns/v1.0/segmentation/skeletons-malecns/skeletons-swc/10360.swc",
+      "sha256": "50d9a19db9987ce8ac0dc94078def9aa74f9b35e25305003c5e440bf91874a10",
+      "raw_node_count": 13170,
+      "display_node_count": 420,
+      "downsampling": "retain roots, branch/terminal nodes and depth stride; restore parent chains",
+      "coordinate_units": "8nm"
+    },
+    {
+      "neuron_id": "523769",
+      "label": "DNa02_R",
+      "stage": "adult_malecns",
+      "dataset": "MaleCNS v1.0",
+      "source_url": "https://storage.googleapis.com/flyem-male-cns/v1.0/segmentation/skeletons-malecns/skeletons-swc/523769.swc",
+      "sha256": "2b605a73b6a015e3b2eb7b6eccf089be6c087374914f7d4c9a7f70983e9036f1",
+      "raw_node_count": 12835,
+      "display_node_count": 420,
+      "downsampling": "retain roots, branch/terminal nodes and depth stride; restore parent chains",
+      "coordinate_units": "8nm"
+    },
+    {
+      "neuron_id": "10763",
+      "label": "MDN_L",
+      "stage": "adult_malecns",
+      "dataset": "MaleCNS v1.0",
+      "source_url": "https://storage.googleapis.com/flyem-male-cns/v1.0/segmentation/skeletons-malecns/skeletons-swc/10763.swc",
+      "sha256": "8ca326d084ac5b985c1a51e27ce28d9583d34f258387b3a91d5231f3cf923ec1",
+      "raw_node_count": 9045,
+      "display_node_count": 420,
+      "downsampling": "retain roots, branch/terminal nodes and depth stride; restore parent chains",
+      "coordinate_units": "8nm"
+    },
+    {
+      "neuron_id": "11288",
+      "label": "MDN_R",
+      "stage": "adult_malecns",
+      "dataset": "MaleCNS v1.0",
+      "source_url": "https://storage.googleapis.com/flyem-male-cns/v1.0/segmentation/skeletons-malecns/skeletons-swc/11288.swc",
+      "sha256": "71a931437c24415c37eb3facf141e8b3c0bb09a7ae2dabd4243b6ec9ea4a9d19",
+      "raw_node_count": 9410,
+      "display_node_count": 420,
+      "downsampling": "retain roots, branch/terminal nodes and depth stride; restore parent chains",
+      "coordinate_units": "8nm"
+    },
+    {
+      "neuron_id": "25582",
+      "label": "BM_Taste_01",
+      "stage": "adult_malecns",
+      "dataset": "MaleCNS v1.0",
+      "source_url": "https://storage.googleapis.com/flyem-male-cns/v1.0/segmentation/skeletons-malecns/skeletons-swc/25582.swc",
+      "sha256": "69780ab12810117c1afdca8f7eac1527295ff3a1198f7f9ddb733c4b6376252a",
+      "raw_node_count": 506,
+      "display_node_count": 291,
+      "downsampling": "retain roots, branch/terminal nodes and depth stride; restore parent chains",
+      "coordinate_units": "8nm"
+    },
+    {
+      "neuron_id": "35051",
+      "label": "BM_Taste_02",
+      "stage": "adult_malecns",
+      "dataset": "MaleCNS v1.0",
+      "source_url": "https://storage.googleapis.com/flyem-male-cns/v1.0/segmentation/skeletons-malecns/skeletons-swc/35051.swc",
+      "sha256": "1b2b60a318006d0264f4591bbd7d2b987568a330b95420285308a15883b56801",
+      "raw_node_count": 425,
+      "display_node_count": 235,
+      "downsampling": "retain roots, branch/terminal nodes and depth stride; restore parent chains",
+      "coordinate_units": "8nm"
+    }
+  ],
+  "larva": [
+    {
+      "neuron_id": "29",
+      "label": "L1EM_neuron_29",
+      "stage": "larva_l1em",
+      "dataset": "Winding 2023 L1EM CATMAID",
+      "source_url": "https://l1em.catmaid.virtualflybrain.org/1/skeleton/29/swc",
+      "sha256": "e79fd4bb5bb725d5fcbd9a382388e681c26e0e0474dc3df6e6e514afdad66765",
+      "raw_node_count": 2955,
+      "display_node_count": 420,
+      "downsampling": "retain roots, branch/terminal nodes and depth stride; restore parent chains",
+      "coordinate_units": "nanometer"
+    },
+    {
+      "neuron_id": "11995",
+      "label": "L1EM_neuron_11995",
+      "stage": "larva_l1em",
+      "dataset": "Winding 2023 L1EM CATMAID",
+      "source_url": "https://l1em.catmaid.virtualflybrain.org/1/skeleton/11995/swc",
+      "sha256": "967bdb1a507328bbcc92526ce9c8c98d639e5d668ead8808e2931f9d1fe7706c",
+      "raw_node_count": 7742,
+      "display_node_count": 420,
+      "downsampling": "retain roots, branch/terminal nodes and depth stride; restore parent chains",
+      "coordinate_units": "nanometer"
+    },
+    {
+      "neuron_id": "23233",
+      "label": "L1EM_neuron_23233",
+      "stage": "larva_l1em",
+      "dataset": "Winding 2023 L1EM CATMAID",
+      "source_url": "https://l1em.catmaid.virtualflybrain.org/1/skeleton/23233/swc",
+      "sha256": "95cf3b284d4a01157f1dbd7d406d9f5651a430bc2fd55e860c874c34c0ce1aef",
+      "raw_node_count": 1036,
+      "display_node_count": 354,
+      "downsampling": "retain roots, branch/terminal nodes and depth stride; restore parent chains",
+      "coordinate_units": "nanometer"
+    }
+  ],
+  "processing": "SWC parsed, topology-preserving downsampling, global display normalization, radius floor"
+}

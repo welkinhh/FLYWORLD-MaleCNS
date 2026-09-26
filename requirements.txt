@@ -1,0 +1,5 @@
+# Runtime dependencies. Run pip from the repository root.
+numpy>=2.0,<3
+scipy>=1.13,<2
+numba>=0.61,<1
+-e ./third_party/flybrain
